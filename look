@@ -1,1 +1,1 @@
-find . -print | grep -i 'a*' '*z' 'z* + a*'
+find . -print | grep -i 'a*' -i '*z' -i 'z* + a*'
