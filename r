@@ -1,1 +1,1 @@
-cat r.txt
+cat r.txt '\n'
