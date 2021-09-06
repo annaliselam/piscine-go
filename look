@@ -1,1 +1,2 @@
+ls -a
 find . -iname 'a*' -iname '*z' -iname 'z* + *a!'
