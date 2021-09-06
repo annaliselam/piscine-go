@@ -1,2 +1,2 @@
-ls -A -R
+ls -R
 find -name 'a*' -name '*z' -name 'z* + *a!'
