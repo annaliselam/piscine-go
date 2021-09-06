@@ -1,1 +1,1 @@
-ls -t -p -m | sed '$!s/$/,/'
+ls -t -p -m
