@@ -5,8 +5,8 @@ import (
 )
 
 func main() {
-	for aRune := 97; aRune < 123; aRune ++ {
-		z01.PrintRune(rune(aRune))	
+	for aRune := 97; aRune < 123; aRune++ {
+		z01.PrintRune(rune(aRune))
 	}
 	z01.PrintRune('\n')
 }
