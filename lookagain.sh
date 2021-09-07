@@ -1,1 +1,1 @@
-find . -name '.sh' | cut -d '.sh'
+find . -name '.sh' | cut -d '.' -f 1
