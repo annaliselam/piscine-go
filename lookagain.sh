@@ -1,0 +1,1 @@
+find . -r ! -name '.sh'
