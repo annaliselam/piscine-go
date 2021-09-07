@@ -1,1 +1,1 @@
-find . -r ! -name '.sh'
+find . ! -name '.sh'
