@@ -2,6 +2,7 @@ package piscine
 
 import (
 	"github.com/01-edu/z01"
+	"mvdan.cc/gofumpt"
 )
 
 func IsNegative(nb int) {
