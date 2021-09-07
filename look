@@ -1,1 +1,1 @@
-find . -print -name 'a*' -name '*z' -name 'z* + a*'
+find . -print -name 'a*' -name '*z' -name 'z* a*'
