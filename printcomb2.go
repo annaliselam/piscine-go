@@ -11,6 +11,8 @@ func PrintComb2() {
 				for d := 49; d <= 57; d++ {
 					if c > a || d > b && c == a {
 						if a == 9 && b == 8 && c == 9 && d == 9 {
+							z01.PrintRune('\n')
+						} else {
 							// numbers rune
 							z01.PrintRune(rune(a))
 							z01.PrintRune(rune(b))
@@ -23,8 +25,6 @@ func PrintComb2() {
 							z01.PrintRune(rune(44))
 							// space rune
 							z01.PrintRune(32)
-						} else {
-							z01.PrintRune('\n')
 						}
 					}
 				}
