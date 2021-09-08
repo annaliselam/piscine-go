@@ -9,7 +9,7 @@ func PrintComb2() {
 		for b := 48; b <= 57; b++ {
 			for c := 48; c <= 57; c++ {
 				for d := 49; d <= 57; d++ {
-					if A != B && C != D && C != A && B != D {
+					if a != b && c != d && c != a && b != d {
 						// numbers rune
 						z01.PrintRune(rune(a))
 						z01.PrintRune(rune(b))
