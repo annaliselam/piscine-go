@@ -8,15 +8,15 @@ func PrintComb() {
 	var numbers string = "000"
 
 	for a := 0; a < 8; a++ {
-		for b := 1; b < 7; b++ {
+		for b := 1; b < 9; b++ {
 			for c := 2; c < 10; c++ {
 				if a < b && b < c {
-					numbers = "a" + "b" + "c"
+					numbers = a + b + c
 
 					// numbers rune
-					z01.PrintRune(rune(numbers[0]))
-					z01.PrintRune(rune(numbers[1]))
-					z01.PrintRune(rune(numbers[2]))
+					z01.PrintRune(rune(a))
+					z01.PrintRune(rune(b))
+					z01.PrintRune(rune(c))
 
 					// comma rune
 					z01.PrintRune(rune(44))
