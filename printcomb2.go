@@ -19,12 +19,12 @@ func PrintComb2() {
 					z01.PrintRune(rune(d))
 
 					if a == 57 && b == 57 && c == 57 && d == 57 {
+						z01.PrintRune('\n')
+					} else {
 						// comma rune
 						z01.PrintRune(rune(44))
 						// space rune
 						z01.PrintRune(32)
-					} else {
-						z01.PrintRune('\n')
 					}
 				}
 			}
