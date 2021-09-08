@@ -11,21 +11,21 @@ func PrintComb2() {
 				for d := 49; d <= 57; d++ {
 					if c > a || d > b {
 						if c == a {
-						// numbers rune
-						z01.PrintRune(rune(a))
-						z01.PrintRune(rune(b))
-						// space rune
-						z01.PrintRune(32)
-						// numbers rune
-						z01.PrintRune(rune(c))
-						z01.PrintRune(rune(d))
-						// comma rune
-						z01.PrintRune(rune(44))
-						// space rune
-						z01.PrintRune(32)
-					} else {
-						z01.PrintRune('\n')
-					
+							// numbers rune
+							z01.PrintRune(rune(a))
+							z01.PrintRune(rune(b))
+							// space rune
+							z01.PrintRune(32)
+							// numbers rune
+							z01.PrintRune(rune(c))
+							z01.PrintRune(rune(d))
+							// comma rune
+							z01.PrintRune(rune(44))
+							// space rune
+							z01.PrintRune(32)
+						} else {
+							z01.PrintRune('\n')
+						}
 					}
 				}
 			}
