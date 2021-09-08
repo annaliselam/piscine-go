@@ -5,26 +5,26 @@ import (
 )
 
 func PrintComb() {
-	for a := 48; a < 56; a++ {
+	var numbers string = "000"
+
+	for a := 0; a < 8; a++ {
+		for b := 1; b < 7; b++ {
+			for c := 2; c < 10; c++ {
+				if a < b && b < c {
+					numbers = "a" + "b" + "c"
+
+					// numbers rune
+					z01.PrintRune(rune(numbers[0]))
+					z01.PrintRune(rune(numbers[1]))
+					z01.PrintRune(rune(numbers[2]))
+
+					// comma rune
+					z01.PrintRune(rune(44))
+
+					// space rune
+					z01.PrintRune(32)
+				}
+			}
+		}
 	}
-
-	for b := 49; b < 57; b++ {
-	}
-
-	for c := 50; c < 49+48; c++ {
-	}
-
-	var numbers rune = 'a' + 'b' + 'c'
-
-	z01.PrintRune(rune(numbers))
-
-	// comma rune
-	z01.PrintRune(rune(44))
-
-	// space rune
-	z01.PrintRune(32)
-}
-
-func main() {
-	piscine.PrintComb()
 }
