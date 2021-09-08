@@ -5,13 +5,10 @@ import (
 )
 
 func PrintComb() {
-	var numbers string = "000"
-
 	for a := 0; a < 8; a++ {
 		for b := 1; b < 9; b++ {
 			for c := 2; c < 10; c++ {
 				if a < b && b < c {
-					numbers = a + b + c
 
 					// numbers rune
 					z01.PrintRune(rune(a))
