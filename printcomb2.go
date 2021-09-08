@@ -5,12 +5,12 @@ import (
 )
 
 func PrintComb2() {
-	for a := 48; a <= 57; a++ {
-		for b := 48; b <= 57; b++ {
-			for c := 48; c <= 57; c++ {
-				for d := 48; d <= 57; d++ {
+	for a := '0'; a <= '9'; a++ {
+		for b := '0'; b <= '9'; b++ {
+			for c := '0'; c <= '9'; c++ {
+				for d := '0'; d <= '9'; d++ {
 					if c > a || d > b && c == a {
-						if a == 9 && b == 8 && c == 9 && d == 9 {
+						if a == '9' && b == '8' && c == '9' && d == '9' {
 							z01.PrintRune(rune(a))
 							z01.PrintRune(rune(b))
 							// space rune
