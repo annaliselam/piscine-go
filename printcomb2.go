@@ -24,7 +24,7 @@ func PrintComb2() {
 						// space rune
 						z01.PrintRune(32)
 					} else {
-						z01.PrintRune('\n')
+						// z01.PrintRune('\n')
 					}
 				}
 			}
