@@ -8,7 +8,7 @@ func PrintComb2() {
 	for a := 48; a <= 57; a++ {
 		for b := 48; b <= 57; b++ {
 			for c := 48; c <= 57; c++ {
-				for d := 48; d <= 57; d++ {
+				for d := 49; d <= 57; d++ {
 					// numbers rune
 					z01.PrintRune(rune(a))
 					z01.PrintRune(rune(b))
@@ -18,7 +18,7 @@ func PrintComb2() {
 					z01.PrintRune(rune(c))
 					z01.PrintRune(rune(d))
 
-					if a == 58 && b == 58 && c == 58 && d == 58 {
+					if a < 57 && b < 57 && c < 57 && d < 57 {
 						// comma rune
 						z01.PrintRune(rune(44))
 						// space rune
