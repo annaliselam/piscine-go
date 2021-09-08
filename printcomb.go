@@ -5,9 +5,9 @@ import (
 )
 
 func PrintComb() {
-	for a := 0; a < 8; a++ {
-		for b := 1; b < 9; b++ {
-			for c := 2; c < 10; c++ {
+	for a := 48; a < 56; a++ {
+		for b := 49; b < 57; b++ {
+			for c := 50; c <= 57; c++ {
 				if a < b && b < c {
 
 					// numbers rune
