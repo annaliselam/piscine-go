@@ -10,21 +10,20 @@ func PrintComb2() {
 			for c := 48; c <= 57; c++ {
 				for d := 49; d <= 57; d++ {
 					if A != B && C != D && C != A && B != D {
-							// numbers rune
-							z01.PrintRune(rune(a))
-							z01.PrintRune(rune(b))
-							// space rune
-							z01.PrintRune(32)
-							// numbers rune
-							z01.PrintRune(rune(c))
-							z01.PrintRune(rune(d))
-							// comma rune
-							z01.PrintRune(rune(44))
-							// space rune
-							z01.PrintRune(32)
-						} else {
-							z01.PrintRune('\n')
-						}
+						// numbers rune
+						z01.PrintRune(rune(a))
+						z01.PrintRune(rune(b))
+						// space rune
+						z01.PrintRune(32)
+						// numbers rune
+						z01.PrintRune(rune(c))
+						z01.PrintRune(rune(d))
+						// comma rune
+						z01.PrintRune(rune(44))
+						// space rune
+						z01.PrintRune(32)
+					} else {
+						z01.PrintRune('\n')
 					}
 				}
 			}
