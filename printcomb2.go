@@ -4,7 +4,7 @@ import (
 	"github.com/01-edu/z01"
 )
 
-func PrintCombTwo() {
+func PrintComb2() {
 	for a := 48; a <= 57; a++ {
 		for b := 48; b <= 57; b++ {
 			for c := 48; c <= 57; c++ {
