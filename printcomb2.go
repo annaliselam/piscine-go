@@ -18,7 +18,7 @@ func PrintComb2() {
 					z01.PrintRune(rune(c))
 					z01.PrintRune(rune(d))
 
-					if c > a || d > b && c == a {
+					if (c > a || d > b) && (c == a) {
 						// comma rune
 						z01.PrintRune(rune(44))
 						// space rune
