@@ -9,9 +9,8 @@ func PrintStr(s string) {
 
 	for s := range slice {
 
-	z01.PrintRune(rune(s))
-	
-	z01.PrintRune('\n')
+		z01.PrintRune(rune(s))
+
+		z01.PrintRune('\n')
 	}
 }
-
