@@ -6,5 +6,4 @@ func Swap(a *int, b *int) {
 
 	*a = swapB
 	*b = swapA
-
 }
