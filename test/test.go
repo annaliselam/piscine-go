@@ -1,7 +1,10 @@
 package main
 
-import "piscine"
+import (
+	"fmt"
+	"piscine"
+)
 
 func main() {
-	piscine.PrintStr("Hello World!")
+	fmt.Println(piscine.IterativePower(4, 5))
 }
