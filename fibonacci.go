@@ -5,7 +5,7 @@ func Fibonacci(index int) int {
 		return -1
 	}
 
-	if index >= 1 {
+	if index <= 1 {
 		return index
 	}
 	return Fibonacci(index-1) + Fibonacci(index-2)
