@@ -9,7 +9,4 @@ func Fibonacci(index int) int {
 		return index
 	}
 	return Fibonacci(index-1) + Fibonacci(index-2)
-
-
-
 }
