@@ -5,9 +5,8 @@ func AlphaCount(s string) int {
 
 	runeString := []rune(s)
 
-	// if i < 65 && i < 90 && i < 97 && i < 122 {
 	for _, letters := range runeString {
-		if (letters > 65 && letters < 90) || (letters > 97 && letters < 122) {
+		if (letters > 64 && letters < 91) || (letters > 96 && letters < 123) {
 			counter++
 		}
 	}
