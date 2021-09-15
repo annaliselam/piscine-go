@@ -1,10 +1,9 @@
 package main
 
 import (
-   "os"
+	"os"
 )
 
 func main() {
-  os.Args[0]
-
+	os.Args[0]
 }
