@@ -8,11 +8,16 @@ import (
 
 func main() {
 	ab := os.Args
-	a := ab[1]
 
-	for _, char := range a {
+	// a := ab[1]
 
-		z01.PrintRune(rune(char))
-		z01.PrintRune('\n')
+	for i := 1; i < len(os.Args); i++ {
+		b := ab[i]
+		for _, char := range b {
+			z01.PrintRune(rune(char))
+			
+		}
 	}
+	z01.PrintRune(rune(' '))
+	z01.PrintRune('\n')
 }
