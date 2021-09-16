@@ -10,11 +10,9 @@ func main() {
 	ab := os.Args
 	a := ab[1]
 
-
 	for _, char := range a {
-	
+
 		z01.PrintRune(rune(char))
 		z01.PrintRune('\n')
 	}
-
 }
