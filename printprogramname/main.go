@@ -9,13 +9,9 @@ import (
 )
 
 func main() {
-
 	a := os.Args[0][2:]
 
 	for _, char := range a {
-
 		z01.PrintRune(rune(char))
-
 	}
-	
-	}
+}
