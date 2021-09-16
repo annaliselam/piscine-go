@@ -16,7 +16,7 @@ func main() {
 		for _, char := range b {
 			z01.PrintRune(rune(char))
 		}
+		z01.PrintRune('\n')
 	}
-	z01.PrintRune(rune(' '))
 	z01.PrintRune('\n')
 }
