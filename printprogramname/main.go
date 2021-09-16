@@ -4,16 +4,14 @@ package main
 
 import (
 	"os"
-
-	"github.com/01-edu/z01"
+	
 )
 
 func main() {
 	arguments := os.Args
-	argName := len(arguments)
 
-	for i := 1; i < len(arguments); i++ {
-		z01.PrintRune(rune(argName))
+	for i := 0; i <= len(arguments); i++ {
+		
+		println(os.Args)
 	}
-	z01.PrintRune('\n')
 }
