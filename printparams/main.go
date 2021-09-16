@@ -8,7 +8,7 @@ import (
 
 func main() {
 	ab := os.Args
-	a := ab[3]
+	a := ab[0][1:]
 
 	for _, char := range a {
 		z01.PrintRune(rune(char))
