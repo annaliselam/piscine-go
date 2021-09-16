@@ -9,9 +9,12 @@ import (
 )
 
 func main() {
-	a := os.Args[0][2:]
+	ab := os.Args
+
+	a := ab[0][2:]
 
 	for _, char := range a {
 		z01.PrintRune(rune(char))
 	}
+	z01.PrintRune('\n')
 }
