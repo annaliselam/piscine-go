@@ -9,14 +9,10 @@ import (
 func main() {
 	ab := os.Args
 
-	// a := ab[1]
-
 	for i := 1; i < len(os.Args); i++ {
-		b := ab[i]
-		for _, char := range b {
-			z01.PrintRune(rune(char))
+		for _, x := range ab[i] {
+			z01.PrintRune(rune(x))
 		}
 		z01.PrintRune('\n')
 	}
-	z01.PrintRune('\n')
 }
