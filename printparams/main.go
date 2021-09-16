@@ -8,13 +8,13 @@ import (
 
 func main() {
 	ab := os.Args
+	a := ab[3]
 
-	for i := 0; i < len(os.Args); i++ {
-		a := ab[i]
+	
 		for _, char := range a {
 			z01.PrintRune(rune(char))
 		}
-	}
+	
 
 	z01.PrintRune('\n')
 }
