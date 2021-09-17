@@ -5,6 +5,7 @@ func TrimAtoi(s string) int {
 	for _, num := range s {
 		convert := int(num) - 48
 		result = (result * 10) + convert
-		return result
+
 	}
+	return result
 }
