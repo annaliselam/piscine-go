@@ -5,8 +5,6 @@ func MakeRange(min, max int) []int {
 
 	if min >= max {
 		size = 0
-	} else if min < 0 || max < 0 {
-		size = 0
 	} else {
 		size = max - min
 	}
