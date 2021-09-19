@@ -4,14 +4,19 @@ package piscine
 // The string is the result of all the arguments concatenated with a newline (\n) between.
 
 func ConcatParams(args []string) string {
-	// answer := make([]int, len(args))
-	answerString := ""
+	emptyString := ""
+	count := 0
 
-	for i := 0; i < len(args); i++ {
-		for _, x := range args[i] {
-			answerString += string(x)
-		}
+	for range args {
+		count++
 	}
 
-	return answerString
+	for i := range args {
+		if i == count-1 {
+			emptyString += args[i]
+		} else {
+			emptyString += args[i] + "\n"
+		}
+	}
+	return emptyString
 }
