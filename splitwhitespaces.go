@@ -34,4 +34,5 @@ func isWhiteSpace(r byte) bool {
 	if r == ' ' || r == '\n' || r == '\t' {
 		return true
 	}
-	
+	return false
+}
