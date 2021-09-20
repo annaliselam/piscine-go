@@ -4,9 +4,9 @@ import (
 	"github.com/01-edu/z01"
 )
 
-type xy struct {
-	name  string
-	value int
+type point struct {
+	x int
+	y int
 }
 
 func printStr(s string) {
@@ -16,18 +16,19 @@ func printStr(s string) {
 	z01.PrintRune('\n')
 }
 
+func setPoint(ptr *point) {
+	ptr.x = 42
+	ptr.y = 21
+}
+
 func main() {
-	x := xy{}
-	y := xy{}
+	points := &point{}
 
-	x.name = "x"
-	x.value = 42
-
-	y.name = "y"
-	y.value = 21
+	setPoint(points)
 
 	printStr("x = 42, y = 21")
 }
 
 // test go run .
 // output x = 42, y = 21
+// figure out how to get it to print with runes
