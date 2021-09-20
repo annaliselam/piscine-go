@@ -26,7 +26,7 @@ func main() {
 	y.name = "y"
 	y.value = 21
 
-	printStr("x = 42, y =21")
+	printStr("x = 42, y = 21")
 }
 
 // test go run .
