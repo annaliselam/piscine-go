@@ -16,7 +16,7 @@ func main() {
 		return
 	}
 
-	file, err := os.Open("quest8.txt")
+	file, _ := os.Open("quest8.txt")
 
 	arr := make([]byte, 14)
 	file.Read(arr)
