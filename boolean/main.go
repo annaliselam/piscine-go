@@ -1,12 +1,13 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
 	"os"
+
+	"github.com/01-edu/z01"
 )
 
 // use os.args to count the number of arguments
-// check the number of arguments, then return an error message 
+// check the number of arguments, then return an error message
 
 func printStr(s string) {
 	for _, r := range s {
@@ -28,10 +29,10 @@ func main() {
 	var numArgs int
 
 	for i := 1; i < len(args); i++ {
-		numArgs += i 
+		numArgs += i
 	}
 
-	if isEven(numArgs){
+	if isEven(numArgs) {
 		printStr("I have an even number of arguments")
 	} else {
 		printStr("I have an odd number of arguments")
