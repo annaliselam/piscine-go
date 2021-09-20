@@ -17,7 +17,7 @@ func printStr(s string) {
 }
 
 func isEven(numArgs int) bool {
-	if (numArgs % 2) == 1 {
+	if (numArgs % 2) == 0 {
 		return true
 	} else {
 		return false
