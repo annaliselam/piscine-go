@@ -1,9 +1,9 @@
 package main
 
 import (
-	"os"
 	"fmt"
-//	"io/ioutil"
+	"os"
+	//	"io/ioutil"
 )
 
 func main() {
@@ -24,6 +24,4 @@ func main() {
 	fmt.Println(string(arr))
 
 	file.Close()
-	
 }
-
