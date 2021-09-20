@@ -1,10 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"github.com/01-edu/z01"
+)
 
 type xy struct {
 	name  string
 	value int
+}
+
+func printStr(s string) {
+	for _, r := range s {
+		z01.PrintRune(r)
+	}
+	z01.PrintRune('\n')
 }
 
 func main() {
@@ -17,7 +26,7 @@ func main() {
 	y.name = "y"
 	y.value = 21
 
-	fmt.Printf("x = %d, y = %d\n", x.value, y.value)
+	printStr("x = 42, y =21")
 }
 
 // test go run .
