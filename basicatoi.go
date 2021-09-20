@@ -1,6 +1,6 @@
 package piscine
 
-func BasicAtoi (s string) int {
+func BasicAtoi(s string) int {
 	result := 0
 	for _, num := range s {
 		convert := int(num) - 48
