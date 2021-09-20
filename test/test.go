@@ -1,8 +1,17 @@
 package main
 
-import "piscine"
+import (
+	"fmt"
+	"piscine"
+)
 
 func main() {
-	a := []int{1, 2, 3, 4, 5, 6}
-	piscine.ForEach(piscine.PrintNbr, a)
+	fmt.Println(piscine.TrimAtoi("12345"))
+	fmt.Println(piscine.TrimAtoi("str123ing45"))
+	fmt.Println(piscine.TrimAtoi("012 345"))
+	fmt.Println(piscine.TrimAtoi("Hello World!"))
+	fmt.Println(piscine.TrimAtoi("sd+x1fa2W3s4"))
+	fmt.Println(piscine.TrimAtoi("sd-x1fa2W3s4"))
+	fmt.Println(piscine.TrimAtoi("sdx1-fa2W3s4"))
+	fmt.Println(piscine.TrimAtoi("sdx1+fa2W3s4"))
 }
