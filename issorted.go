@@ -16,7 +16,11 @@ func IsSorted(f func(a, b int) int, a []int) bool {
 			}
 		}
 	}
-	return sortedSlice
+	if sortedSlice{
+		return true
+	} else {
+		return false
+	}
 }
 
 func IsBigger(a int, b int) int {
