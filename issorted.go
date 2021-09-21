@@ -6,21 +6,27 @@ package piscine
 
 // To do your testing you have to write your own f function.
 
+// output should be true false true
+
 func IsSorted(f func(a, b int) int, a []int) bool {
-	for j := 0; j < len(a)-1; j++ {
-		if f(a[j], a[j+1]) < 0 {
-			return false
+	for i := 0; i < len(a)-1; i++ {
+		if f(a[i], a[i+1]) < 0 {
+			return true
 		}
-
-		for i := 0; i < len(a)-1; i++ {
-			if f(a[i], a[i+1]) <= 0 {
-				return false
-			}
-		}
-
 	}
 
-	return true
+	for i := 0; i < len(a)-1; i++ {
+		if f(a[i], a[i+1]) == 1 {
+			return true
+		}
+	}
+
+	for j := 0; j < len(a)-1; j++ {
+		if f(a[j], a[j+1]) == 0 {
+			return false
+		}
+	}
+	return false
 }
 
 func IsBigger(a int, b int) int {
