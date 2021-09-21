@@ -9,24 +9,24 @@ package piscine
 // output should be true false true
 
 func IsSorted(f func(a, b int) int, a []int) bool {
-	for i := 0; i < len(a)-1; i++ {
-		if f(a[i], a[i+1]) < 0 {
-			return true
+	if len(a) > 1 {
+		if f(a[0], a[1]) >= 0 {
+			for i := 0; i < len(a)-1; i++ {
+				if f(a[i], a[i+1]) < 0 {
+					return false
+				}
+			}
+		}
+		if f(a[0], a[1]) <= 0 {
+			for i := 0; i < len(a)-1; i++ {
+				if f(a[i], a[i+1]) > 0 {
+					return false
+				}
+			}
 		}
 	}
 
-	for i := 0; i < len(a)-1; i++ {
-		if f(a[i], a[i+1]) == 1 {
-			return true
-		}
-	}
-
-	for j := 0; j < len(a)-1; j++ {
-		if f(a[j], a[j+1]) == 0 {
-			return false
-		}
-	}
-	return false
+	return true
 }
 
 func IsBigger(a int, b int) int {
