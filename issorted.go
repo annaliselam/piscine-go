@@ -16,7 +16,7 @@ func IsSorted(f func(a, b int) int, a []int) bool {
 			}
 		}
 	}
-	if sortedSlice{
+	if sortedSlice {
 		return true
 	} else {
 		return false
